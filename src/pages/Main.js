@@ -8,7 +8,7 @@ import TopNav from '../components/TopNav'
 export default function Main() {
     const [category, setCategory] = useState(0)
     const [categoryContent, setCategoryContent] = useState('')
-    const path = "http://localhost:8081"
+    const path = "https://malgorzataphillips.com:8081"
 
     const getCategory = (id) => setCategory(id)
     const getCategoryContent = async () => {

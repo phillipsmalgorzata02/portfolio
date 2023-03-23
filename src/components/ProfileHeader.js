@@ -1,5 +1,5 @@
 
-const path = 'http://localhost:3000/assets/images/'
+const path = 'https://malgorzataphillips.com/assets/images/'
 const profile = {
     name: 'Malgorzata Phillips',
     imageUrl:
