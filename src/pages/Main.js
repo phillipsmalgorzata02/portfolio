@@ -42,7 +42,7 @@ export default function Main() {
     }
     useEffect(() => {
 
-        if (category != 0) {
+        if (category !== 0) {
             getCategoryContent()
         }
 

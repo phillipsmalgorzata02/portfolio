@@ -1,19 +1,4 @@
-import { Fragment, useState } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
-import {
-    Bars3Icon,
-    CalendarIcon,
-    CogIcon,
-    HomeIcon,
-    MagnifyingGlassCircleIcon,
-    MapIcon,
-    MegaphoneIcon,
-    SquaresPlusIcon,
-    UserGroupIcon,
-    XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronLeftIcon, EnvelopeIcon, FunnelIcon, MagnifyingGlassIcon, PhoneIcon } from '@heroicons/react/20/solid'
-import Profile from './Profile'
+
 const path = 'http://localhost:3000/assets/images/'
 const profile = {
     name: 'Malgorzata Phillips',
@@ -26,9 +11,6 @@ const profile = {
 
 }
 
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
 
 export default function ProfileHeader() {
     return (
