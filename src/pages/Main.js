@@ -41,12 +41,11 @@ export default function Main() {
 
     }
     useEffect(() => {
-
         if (category !== 0) {
             getCategoryContent()
         }
-
-    })
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [category])
 
 
 
