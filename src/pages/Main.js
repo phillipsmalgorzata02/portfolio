@@ -8,7 +8,7 @@ import TopNav from '../components/TopNav'
 export default function Main() {
     const [category, setCategory] = useState(0)
     const [categoryContent, setCategoryContent] = useState('')
-    const path = "https://malgorzataphillips.com:8081"
+    const path = "https://rocky-dawn-82944.herokuapp.com"
 
     const getCategory = (id) => setCategory(id)
     const getCategoryContent = async () => {
