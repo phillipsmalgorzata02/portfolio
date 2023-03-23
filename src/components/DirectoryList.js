@@ -55,12 +55,12 @@ export default function DirectoryList({ getCategory }) {
                         <div className="relative flex items-center space-x-3 px-6 py-5 focus-within:ring-2 focus-within:ring-inset focus-within:ring-slate-200 focus-within:bg-slate-200 hover:bg-slate-200">
 
                             <div className="min-w-0 flex-1">
-                                <a href="/" className="focus:outline-none">
+                                <div className="focus:outline-none">
                                     {/* Extend touch target to entire panel */}
                                     <span className="absolute inset-0" aria-hidden="true" />
                                     <p className="text-sm font-medium text-gray-900">{item.name}</p>
                                     <p className="truncate text-sm text-gray-600">Software Engineer</p>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </li>

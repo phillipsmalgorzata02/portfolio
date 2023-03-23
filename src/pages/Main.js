@@ -41,6 +41,7 @@ export default function Main() {
 
     }
     useEffect(() => {
+        console.log('category', category)
         if (category !== 0) {
             getCategoryContent()
         }
