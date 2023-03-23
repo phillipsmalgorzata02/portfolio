@@ -46,7 +46,7 @@ export default function Main() {
             getCategoryContent()
         }
 
-    }, [category])
+    })
 
 
 
