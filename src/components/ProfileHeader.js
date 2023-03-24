@@ -1,5 +1,5 @@
 
-const path = 'https://malgorzataphillips.com/assets/images/'
+const path = 'https://main--silly-chimera-fb8663.netlify.app/assets/images/'
 const profile = {
     name: 'Malgorzata Phillips',
     imageUrl:
