@@ -1,4 +1,3 @@
-//import { ChevronLeftIcon, EnvelopeIcon, FunnelIcon, MagnifyingGlassIcon, PhoneIcon } from '@heroicons/react/20/solid'
 
 const directory = [
     {
