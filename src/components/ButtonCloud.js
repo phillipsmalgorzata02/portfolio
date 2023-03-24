@@ -1,6 +1,6 @@
 
 export default function ButtonCloud() {
-    const buttons = ["Angular", "AWS", "CSS", "HTML", "Node", "PHP", "React", "Shopify", "Wordpress"]
+    const buttons = ["Angular", "AWS", "CSS", "HTML", "Node", "PHP", "React", "Shopify", "Vue", "Wordpress"]
 
     return (<div>
         {buttons.map((button, index) => {
