@@ -2,7 +2,7 @@ import Cover from './Cover'
 import Content from './Content'
 import Files from './Files'
 
-export default function Profile({ category, categoryContent }) {
+export default function Profile({ isLoading, category, categoryContent }) {
     const classes = category === 0 ? "overflow-hipen bg-white-200 shadow sm:rounded-lg" : "overflow-hipen bg-slate-200 shadow sm:rounded-lg"
     return (
         <div className={classes}>
@@ -35,7 +35,7 @@ export default function Profile({ category, categoryContent }) {
                             </p>
                             :
                             <p className="mt-1 text-sm text-gray-900">
-                                <Content categoryContent={categoryContent} />
+                                <Content isLoading={isLoading} categoryContent={categoryContent} />
                                 <Files />
                             </p>}
                     </div>

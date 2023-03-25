@@ -8,11 +8,13 @@ import TopNav from '../components/TopNav'
 export default function Main() {
     const [category, setCategory] = useState(0)
     const [categoryContent, setCategoryContent] = useState('')
+    const [isLoading, setIsLoading] = useState(true)
+
     const path = "https://rocky-dawn-82944.herokuapp.com"
 
     const getCategory = (id) => setCategory(id)
     const getCategoryContent = async () => {
-
+        setIsLoading(true)
         const response = await axios.get(`${path}/job/${category}`)
         const data = response.data[0]
         let Job = {
@@ -38,6 +40,10 @@ export default function Main() {
         }
 
         setCategoryContent(Job)
+        setTimeout(() => {
+            setIsLoading(false)
+        }, 1000)
+
 
     }
     useEffect(() => {
@@ -62,7 +68,7 @@ export default function Main() {
                         <TopNav getCategory={getCategory} />
                     </div>
                     <ProfileHeader />
-                    <Profile category={category} categoryContent={categoryContent} />
+                    <Profile isLoading={isLoading} category={category} categoryContent={categoryContent} />
                 </main>
 
             </div>
