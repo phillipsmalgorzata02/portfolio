@@ -33,12 +33,10 @@ export default function Content({ isLoading, categoryContent }) {
                         </dd>
                     </div>
                     <div className="py-4 sm:grid sm:grid-cols-2 sm:gap-4 sm:py-5 sm:px-6">
-                        {/* <dt className="text-lg font-medium text-gray-500" style={{ color: 'purple', fontFamily: "'Josefin Sans', sans-serif;!important" }}>How</dt> */}
                         <dd className="text-sm text-gray-900 sm:col-span-2 sm:mt-0"
                             style={{ textAlign: "justify" }}>
                             <div contentEditable='true' dangerouslySetInnerHTML={{ __html: categoryContent.how }}></div>
                         </dd>
-                        {/* <dt className="text-lg font-medium text-gray-500" style={{ color: 'purple', fontFamily: "'Josefin Sans', sans-serif;!important" }}>Why</dt> */}
                         <dd className="text-sm text-gray-900 sm:col-span-2 sm:mt-0"
                             style={{ textAlign: "justify" }}>
                             <div contentEditable='true' dangerouslySetInnerHTML={{ __html: categoryContent.why }}></div>

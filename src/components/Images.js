@@ -1,4 +1,4 @@
-const path = "https://main--silly-chimera-fb8663.netlify.app/assets/images/"
+const path = "https://malgorzataphillips.netlify.app/assets/images/"
 const files = [
     {
         source:
@@ -44,7 +44,7 @@ export default function Images() {
             {files.map((file) => (
                 <li key={file.source} className="relative">
                     <div className="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-                        <img src={file.source} alt="" className="p-2 pointer-events-none object-cover group-hover:opacity-75" />
+                        <img src={file.source} alt="Portfolio Image" className="p-2 pointer-events-none object-cover group-hover:opacity-75" />
                     </div>
                 </li>
             ))}

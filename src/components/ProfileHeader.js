@@ -1,5 +1,5 @@
 
-const path = 'https://main--silly-chimera-fb8663.netlify.app/assets/images/'
+const path = 'https://malgorzataphillips.netlify.app/assets/images/'
 const profile = {
     name: 'Malgorzata Phillips',
     imageUrl:
@@ -16,7 +16,7 @@ export default function ProfileHeader() {
     return (
         <div>
             <div>
-                <img className="h-32 w-full object-cover lg:h-28" src={profile.imageUrl} alt="Welcome to my online portfolio" />
+                <img className="h-32 w-full object-cover lg:h-28" src={profile.imageUrl} alt="Online portfolio" />
 
                 <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
                     <div className="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
@@ -24,7 +24,7 @@ export default function ProfileHeader() {
                             <img
                                 className="h-24 w-24 rounded-full ring-4 ring-white sm:h-32 sm:w-32"
                                 src={profile.coverImageUrl}
-                                alt="Welcome to my online portfolio"
+                                alt="Online portfolio"
                             />
                         </div>
                         <div className="mt-6 sm:flex sm:min-w-0 sm:flex-1 sm:items-center sm:justify-end sm:space-x-6 sm:pb-1">
