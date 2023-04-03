@@ -17,7 +17,7 @@
             "dateStr": "August 2020 – Jan 2021",
             "type": "Contract",
             "location": "Remote",
-            "how": "As a contractor for this startup company, I worked with Angular, Node, and Google Cloud. I was instrumental in making changes and updates to the Angular application which serves as a portal for agency users of the system. This involved integrating data from API calls which I implemented on the front-end and built on the back-end. I was also involved in adding new payment systems capabilities to the application. ",
+            "how": "As a contractor for this startup company, I worked with React, Node, and Google Cloud. I was instrumental in making changes and updates to the React application which serves as a portal for agency users of the system. This involved integrating data from API calls which I implemented on the front-end and built on the back-end. I was also involved in adding new payment systems capabilities to the application. ",
             "why": "Tixora is a company whose business is mass transit. With a simply swipe of an app users can manage their rides on mass transit systems in many areas of the US. The company also boasts an integration with a ride sharing service which uses transit agency vehicles. This integration was a big part of my work while at the company."
         },
         {
@@ -37,7 +37,7 @@
             "dateStr": "May 2018 – April 2019 ",
             "type": "Contract",
             "location": "Remote",
-            "how": "I worked on a small cross functional team at this government contract for the VA. I helped to build front-end interfaces, implement API consumers, and build API endpoints to create an integrated patient view of third party and VA services. My tech stack included React, Node and Mongo.",
+            "how": "I worked on a small cross functional team at this government contract for the VA. I helped to implement API integrations and build API endpoints. My tech stack included Node and Mongo.",
             "why": "VetsEZ services the veteran’s community and provides valuable tools that allow users to manage services across a variety of domains, both government and commercial. Building useful interfaces provides this accessibility to the end user. "
         },
         {
