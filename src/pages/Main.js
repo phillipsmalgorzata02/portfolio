@@ -1,5 +1,4 @@
 import { Fragment, useState, useEffect } from 'react'
-import axios from 'axios'
 import ProfileHeader from '../components/ProfileHeader'
 import DirectoryList from '../components/DirectoryList'
 import Profile from '../components/Profile'
@@ -11,12 +10,9 @@ export default function Main() {
     const [categoryContent, setCategoryContent] = useState(resumeData[0])
     const [isLoading, setIsLoading] = useState(true)
 
-    const path = "https://rocky-dawn-82944.herokuapp.com"
-
     const getCategory = (id) => setCategory(id)
     const getCategoryContent = async () => {
         setIsLoading(true)
-        //const response = await axios.get(`${path}/job/${category}`)
         const data = resumeData.items.filter((f) => f.id === category)[0]
 
         let Job = {
