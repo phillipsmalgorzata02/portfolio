@@ -12,7 +12,6 @@ export default function Main() {
 
     const getCategory = (id) => setCategory(id)
     const getCategoryContent = async () => {
-        setIsLoading(true)
         const data = resumeData.items.filter((f) => f.id === category)[0]
 
         let Job = {
@@ -38,10 +37,6 @@ export default function Main() {
         }
 
         setCategoryContent(Job)
-        setTimeout(() => {
-            setIsLoading(false)
-        }, 1000)
-
 
     }
     useEffect(() => {
