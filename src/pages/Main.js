@@ -14,7 +14,7 @@ export default function Main() {
     const getCategoryContent = async () => {
         setIsLoading(false)
         const data = resumeData.items.filter((f) => f.id === category)[0]
-
+        //fake
         let Job = {
             title: null,
             employer: null,
