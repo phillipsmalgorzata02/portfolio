@@ -4,10 +4,11 @@ import ProfileHeader from '../components/ProfileHeader'
 import DirectoryList from '../components/DirectoryList'
 import Profile from '../components/Profile'
 import TopNav from '../components/TopNav'
+import resumeData from '../data/resume.json'
 
 export default function Main() {
     const [category, setCategory] = useState(0)
-    const [categoryContent, setCategoryContent] = useState('')
+    const [categoryContent, setCategoryContent] = useState(resumeData[0])
     const [isLoading, setIsLoading] = useState(true)
 
     const path = "https://rocky-dawn-82944.herokuapp.com"
@@ -15,8 +16,9 @@ export default function Main() {
     const getCategory = (id) => setCategory(id)
     const getCategoryContent = async () => {
         setIsLoading(true)
-        const response = await axios.get(`${path}/job/${category}`)
-        const data = response.data[0]
+        //const response = await axios.get(`${path}/job/${category}`)
+        const data = resumeData.items.filter((f) => f.id === category)[0]
+
         let Job = {
             title: null,
             employer: null,
