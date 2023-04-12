@@ -8,10 +8,11 @@ import resumeData from '../data/resume.json'
 export default function Main() {
     const [category, setCategory] = useState(0)
     const [categoryContent, setCategoryContent] = useState(resumeData[0])
-    const [isLoading, setIsLoading] = useState(true)
+    const [isLoading, setIsLoading] = useState(false)
 
     const getCategory = (id) => setCategory(id)
     const getCategoryContent = async () => {
+        setIsLoading(false)
         const data = resumeData.items.filter((f) => f.id === category)[0]
 
         let Job = {
@@ -37,6 +38,10 @@ export default function Main() {
         }
 
         setCategoryContent(Job)
+        setTimeout(() => {
+            setIsLoading(false)
+        }, 1000)
+
 
     }
     useEffect(() => {
