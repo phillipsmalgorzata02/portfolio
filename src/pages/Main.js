@@ -57,7 +57,7 @@ export default function Main() {
     return (
         <>
             <div className="flex h-full">
-                <aside className="hidden w-96 flex-shrink-0 border-r border-gray-200 xl:order-first xl:flex xl:flex-col">
+                <aside className="hidden w-96 flex-shrink-0 border-r border-gray-200 xl:order-first xl:flex xl:flex-col scrollable sm:overflow-y-scroll sm:overflow-visible">
                     <DirectoryList getCategory={getCategory} />
                 </aside>
                 <main className="scrollable relative z-0 flex-1 overflow-y-scroll focus:outline-none xl:order-last"

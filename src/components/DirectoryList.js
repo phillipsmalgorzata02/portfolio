@@ -48,7 +48,7 @@ const directory = [
 export default function DirectoryList({ getCategory }) {
     return (
         <nav className="min-h-0 flex-1" aria-label="Directory">
-            <ul className="relative z-0 divide-y divide-gray-400">
+            <ul className="relative z-0 divide-y divide-gray-400 h-96">
                 {directory.map((item) => (
                     <li key={item.id} onClick={() => getCategory(item.id)}>
                         <div className="relative flex items-center space-x-3 px-6 py-5 focus-within:ring-2 focus-within:ring-inset focus-within:ring-slate-200 focus-within:bg-slate-200 hover:bg-slate-200">
