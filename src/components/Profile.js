@@ -7,7 +7,7 @@ export default function Profile({ isLoading, category, categoryContent }) {
     const classes = category === 0 ? "overflow-hidden bg-white-200 shadow sm:rounded-lg" : "h-full overflow-hidden bg-slate-200 shadow sm:rounded-lg"
     return (
         <div className={classes}>
-            <div className="h-full px-4 py-5 sm:px-6">
+            <div className="h-full px-4 py-5 sm:px-6 mt-4">
                 <dl className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
                     {category === 0 ? <>
                         <div className="sm:col-span-1">
@@ -29,7 +29,7 @@ export default function Profile({ isLoading, category, categoryContent }) {
                         {/* <Files /> */}
                     </> : null}
 
-                    <div className="sm:col-span-2">
+                    <div className="sm:col-span-2 mt-4 mb-14">
                         {category === 0 ?
                             <p className="mt-1 text-sm text-gray-900">
                                 <Cover />
@@ -37,9 +37,6 @@ export default function Profile({ isLoading, category, categoryContent }) {
                             :
                             <p className="mt-1 text-sm text-gray-900">
                                 <Content isLoading={isLoading} categoryContent={categoryContent} />
-                                <div className="bg-white mt-3 flex h-full px-4 py-5 align-center justify-center sm:px-6">
-                                    <ButtonCloud category={category} />
-                                </div>
                             </p>}
                     </div>
 

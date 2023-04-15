@@ -66,7 +66,9 @@ export default function Main() {
                         <TopNav getCategory={getCategory} />
                     </div>
                     <ProfileHeader />
-                    <Profile isLoading={isLoading} category={category} categoryContent={categoryContent} />
+                    <div className="relative z-0 flex-1 focus:outline-none xl:order-last">
+                        <Profile isLoading={isLoading} category={category} categoryContent={categoryContent} />
+                    </div>
                 </main>
 
             </div>

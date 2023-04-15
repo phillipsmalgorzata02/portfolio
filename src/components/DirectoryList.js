@@ -58,7 +58,7 @@ export default function DirectoryList({ getCategory }) {
                                     {/* Extend touch target to entire panel */}
                                     <span className="absolute inset-0" aria-hidden="true" />
                                     <p className="text-sm font-medium text-gray-900">{item.name}</p>
-                                    <p className="truncate text-sm text-gray-600">Software Engineer</p>
+                                    <p className="truncate text-sm text-gray-600">{item.id === 0 ? "" : "Software Engineer"}</p>
                                 </div>
                             </div>
                         </div>
