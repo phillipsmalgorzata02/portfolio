@@ -37,15 +37,17 @@ export default function Profile({ isLoading, category, categoryContent }) {
                             :
                             <p className="mt-1 text-sm text-gray-900">
                                 <Content isLoading={isLoading} categoryContent={categoryContent} />
-                                <Files />
+                                <div className="bg-white mt-3 flex h-full px-4 py-5 align-center justify-center sm:px-6">
+                                    <ButtonCloud category={category} />
+                                </div>
                             </p>}
                     </div>
 
                 </dl>
             </div>
-            {category === 0 ? <div className="flex h-full px-4 py-5 align-center justify-center sm:px-6">
-                <ButtonCloud />
-            </div> : null}
+            <div className="flex h-full px-4 py-5 align-center justify-center sm:px-6">
+                <ButtonCloud category={category} />
+            </div>
         </div>
     )
 }
