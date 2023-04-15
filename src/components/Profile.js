@@ -4,10 +4,10 @@ import Files from './Files'
 import ButtonCloud from './ButtonCloud'
 
 export default function Profile({ isLoading, category, categoryContent }) {
-    const classes = category === 0 ? "overflow-hidden bg-white-200 shadow sm:rounded-lg" : "overflow-hipen bg-slate-200 shadow sm:rounded-lg"
+    const classes = category === 0 ? "overflow-hidden bg-white-200 shadow sm:rounded-lg" : "h-full overflow-hidden bg-slate-200 shadow sm:rounded-lg"
     return (
         <div className={classes}>
-            <div className="h-full border-t border-gray-200 px-4 py-5 sm:px-6">
+            <div className="h-full px-4 py-5 sm:px-6">
                 <dl className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
                     {category === 0 ? <>
                         <div className="sm:col-span-1">
@@ -43,9 +43,9 @@ export default function Profile({ isLoading, category, categoryContent }) {
 
                 </dl>
             </div>
-            <div className="h-full border-t border-gray-200 px-4 py-5 sm:px-6">
+            {category === 0 ? <div className="flex h-full px-4 py-5 align-center justify-center sm:px-6">
                 <ButtonCloud />
-            </div>
+            </div> : null}
         </div>
     )
 }

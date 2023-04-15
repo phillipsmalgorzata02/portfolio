@@ -1,3 +1,4 @@
+import { PaperClipIcon } from '@heroicons/react/20/solid'
 
 const path = 'https://malgorzataphillips.netlify.app/assets/images/'
 const profile = {
@@ -32,6 +33,14 @@ export default function ProfileHeader() {
                                 <h1 className="truncate text-2xl font-bold text-gray-900">{profile.name} - Software Engineer</h1>
                             </div>
                         </div>
+                        <a target="_blank" href="./assets/files/ResumeMargaretPhillips.pdf" className="font-medium text-indigo-600 hover:text-indigo-500">
+                            <PaperClipIcon className="float-left h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
+                            <span className="ml-2 w-0 flex-1 truncate">Resume</span>
+                        </a>
+                        <a target="_blank" href="./assets/files/CoverLetterMargaretPhillips.pdf" className="font-medium text-indigo-600 hover:text-indigo-500">
+                            <PaperClipIcon className="float-left h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
+                            <span className="ml-2 w-0 flex-1 truncate">Cover Letter</span>
+                        </a>
                     </div>
                 </div>
             </div>
