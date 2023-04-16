@@ -42,7 +42,7 @@ export default function Profile({ isLoading, category, categoryContent }) {
 
                 </dl>
             </div>
-            <div className="flex h-full px-4 py-5 align-center justify-center sm:px-6">
+            <div className="bg-white flex h-full px-4 py-5 align-center justify-center sm:px-6">
                 <ButtonCloud category={category} />
             </div>
         </div>
