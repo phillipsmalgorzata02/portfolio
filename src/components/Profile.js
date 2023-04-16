@@ -10,16 +10,16 @@ export default function Profile({ isLoading, category, categoryContent }) {
                 <dl className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
                     {category === 0 ? <>
                         <div className="sm:col-span-1">
-                            <p className="text-sm font-medium text-gray-500">Email</p>
-                            <p className="mt-1 text-sm text-gray-900">margaretphillips003@gmail.com</p>
+                            <p className="pl-6 text-sm font-medium text-gray-500">Email</p>
+                            <p className="pl-6 mt-1 text-sm text-gray-900">margaretphillips003@gmail.com</p>
                         </div>
                         <div className="sm:col-span-1">
                             <p className="text-sm font-medium text-gray-500">LinkedIn</p>
                             <p className="mt-1 text-sm text-gray-900">https://www.linkedin.com/in/margaretphillips/</p>
                         </div>
                         <div className="sm:col-span-1">
-                            <p className="text-sm font-medium text-gray-500">Citizenship Status</p>
-                            <p className="mt-1 text-sm text-gray-900">US Citizen</p>
+                            <p className="pl-6 text-sm font-medium text-gray-500">Citizenship Status</p>
+                            <p className="pl-6 mt-1 text-sm text-gray-900">US Citizen</p>
                         </div>
                         <div className="sm:col-span-1">
                             <p className="text-sm font-medium text-gray-500">Location</p>
