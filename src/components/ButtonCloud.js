@@ -65,7 +65,7 @@ export default function ButtonCloud({ category }) {
     ]
 
     let buttons = []
-    buttons = buttonMap.map((m) => {
+    buttonMap.map((m) => {
         if (category === 0 || category === 5) {
             if (m.id !== 11 && m.id !== 12) {
                 buttons.push(m.img)
