@@ -1,6 +1,5 @@
 import Cover from './Cover'
 import Content from './Content'
-import Files from './Files'
 import ButtonCloud from './ButtonCloud'
 
 export default function Profile({ isLoading, category, categoryContent }) {
@@ -26,7 +25,6 @@ export default function Profile({ isLoading, category, categoryContent }) {
                             <p className="text-sm font-medium text-gray-500">Location</p>
                             <p className="mt-1 text-sm text-gray-900">Fully Remote</p>
                         </div>
-                        {/* <Files /> */}
                     </> : null}
 
                     <div className="sm:col-span-2 mt-4 mb-14">

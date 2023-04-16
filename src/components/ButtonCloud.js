@@ -65,7 +65,7 @@ export default function ButtonCloud({ category }) {
     ]
 
     let buttons = []
-    buttonMap.map((m) => {
+    buttons = buttonMap.map((m) => {
         if (category === 0 || category === 5) {
             if (m.id !== 11 && m.id !== 12) {
                 buttons.push(m.img)
@@ -99,6 +99,8 @@ export default function ButtonCloud({ category }) {
                 buttons.push(m.img)
             }
         }
+
+        return buttons
     })
 
 
